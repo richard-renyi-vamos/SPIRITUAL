@@ -1,0 +1,29 @@
+import random
+import datetime
+
+def get_daily_quote():
+    quotes = [
+        "The journey of a thousand miles begins with one step.",
+        "Knowing others is intelligence; knowing yourself is true wisdom. Mastering others is strength; mastering yourself is true power.",
+        "Nature does not hurry, yet everything is accomplished.",
+        "Do the difficult things while they are easy and do the great things while they are small. A journey of a thousand miles must begin with a single step.",
+        "The wise man is one who, knows, what he does not know.",
+        "He who knows others is wise; he who knows himself is enlightened.",
+        "The best fighter is never angry.",
+        "To know that you do not know is the best. To pretend to know when you do not know is a disease.",
+        "When I let go of what I am, I become what I might be.",
+        "Be content with what you have; rejoice in the way things are. When you realize there is nothing lacking, the whole world belongs to you.",
+    ]
+    return random.choice(quotes)
+
+def main():
+    today = datetime.date.today()
+    quote = get_daily_quote()
+    
+    print("Daily Tao Te Ching Quote -", today)
+    print(quote)
+
+if __name__ == "__main__":
+    main()
+
+# CREATED WITH THE HELP OF OPEN-AI CHAT GPT: https://chat.openai.com/chat
